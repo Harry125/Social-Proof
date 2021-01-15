@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(300, 43%, 22%);
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro strong {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+}
+
+.intro p {
+    margin-top: 1.5rem;
+}
+
+.rating {
+    margin-top: 2.5rem;
+}
+
+.rating div {
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 7px;
+    padding: 1rem 0;
+}
+
+.rating img {
+    margin-right: 0.3rem;
+}
+
+.rating p {
+    margin-top: 0.6rem;
+    font-weight: bold;
+}
+
+.feedback {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+}
+
+.feedback__user {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    padding: 2.5rem 1.8rem 2rem;
+}
+
+.feedback__user--inline {
+    display: flex;
+    align-items: center;
+}
+
+.feedback__user--inline img {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.feedback__user--marginleft {
+    margin-left: 25px;
+}
+
+.feedback__user strong, 
+.feedback__user p {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.85rem;
+}
+
+.feedback__user em {
+    color: hsl(333, 80%, 67%);
+    display: block;
+    font-style: normal;
+    margin-top: 0.3rem;
+}
+
+.feedback__user p {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(300, 43%, 22%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        background: url(./images/bg-pattern-top-desktop.svg) no-repeat;
+        margin-top: 8rem;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .wrapper, .feedback {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper .intro, .wrapper .rating{
+        margin-top: 0;
+    }
+
+    .intro {
+        text-align: left;
+        width: 33%;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .rating__review, .rating__guru, .rating__besttech {
+        width: 80%;
+    }
+
+    .rating div {
+        text-align: left;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .rating__review p, .rating__guru p, .rating__besttech p {
+        display: inline-block;
+        margin-left: 1.5rem;
+    }
+
+    .rating__guru {
+        align-self: center;
+    }
+
+    .rating__besttech {
+        align-self: flex-end;
+    }
+
+    .feedback {
+        height: 300px;
+    }
+
+    .feedback__user {
+        width: 32%;
+        margin-bottom: 0;
+    }
+
+    .feedback__user--top {
+        align-self: flex-start;
+    }
+
+    .feedback__user--center {
+        align-self: center;
+    }
+
+    .feedback__user--bottom {
+        align-self: flex-end;
+    }
+
+    .attribution {
+        margin-top: 6rem;
+    }
+}
